@@ -1,0 +1,144 @@
+name: 🐛 Rapport de bug
+description: Signalez un problème pour nous aider à améliorer le projet
+title: "[BUG] "
+labels: ["bug", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Merci de prendre le temps de signaler ce problème ! 
+        Remplissez ce formulaire avec le maximum de détails pour nous aider reproduire et le résoudre le bug rapidement.
+
+  - type: dropdown
+    id: os
+    attributes:
+      label: 🖥️ Système d'exploitation
+      description: Quel système d'exploitation utilisez-vous ?
+      options:
+        - Windows
+        - macOS
+        - Linux (Ubuntu/Debian)
+        - Linux (autre)
+        - iOS
+        - Android
+        - Autre
+    validations:
+      required: true
+
+  - type: dropdown
+    id: browser
+    attributes:
+      label: 🌐 Navigateur (si applicable)
+      description: Quel navigateur utilisez-vous ?
+      options:
+        - Chrome
+        - Firefox
+        - Safari
+        - Edge
+        - Opera
+        - Brave
+        - Autre
+        - Non applicable (app native)
+
+  - type: input
+    id: browser-version
+    attributes:
+      label: Version du navigateur
+      description: Quelle version de navigateur, ? (Ex. Chrome 120.0.6099.109)
+      placeholder: Ex. Chrome 120.0.6099.109
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description du problème
+      description: Décrivez clairement et précisément le problème rencontré
+      placeholder: Ex. L'application plante quand je clique sur le bouton "Sauvegarder"
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: 🔄 Étapes pour reproduire
+      description: Listez les étapes exactes pour reproduire le problème
+      placeholder: |
+        1. Aller à '...'
+        2. Cliquer sur '...'
+        3. Faire défiler jusqu'à '...'
+        4. Voir l'erreur
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: ✅ Comportement attendu
+      description: Décrivez ce qui devrait se passer normalement
+      placeholder: Ex. La page devrait se charger sans erreur
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: ❌ Comportement observé
+      description: Décrivez ce qui se passe réellement
+      placeholder: Ex. Une erreur 404 s'affiche
+    validations:
+      required: true
+
+
+
+  - type: textarea
+    id: error-messages
+    attributes:
+      label: 🚨 Messages d'erreur
+      description: Copiez-collez les messages d'erreur exacts (si visibles)
+      placeholder: Copiez-collez ici les messages d'erreur exacts
+      render: text
+
+  - type: textarea
+    id: console-logs
+    attributes:
+      label: 🔍 Console du navigateur
+      description: Ouvrez la console (F12 > Console) et copiez les erreurs
+      placeholder: Copiez-collez ici les erreurs de la console
+      render: text
+
+  - type: checkboxes
+    id: solutions-tried
+    attributes:
+      label: 🔧 Solutions tentées
+      description: Avez-vous essayé ces solutions courantes ?
+      options:
+        - label: Actualiser la page
+        - label: Vider le cache du navigateur
+        - label: Essayer un autre navigateur
+        - label: Redémarrer l'application/navigateur
+        - label: Désactiver les extensions de navigateur
+        - label: Essayer en navigation privée
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: 📸 Captures d'écran
+      description: Ajoutez des captures d'écran pour illustrer le problème (glissez-déposez)
+      placeholder: Glissez-déposez vos images ici ou collez-les directement
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: 📝 Contexte supplémentaire
+      description: Informations supplémentaires (fréquence, impact, etc.)
+      placeholder: Ex. Cela arrive à chaque fois que je me connecte, ou seulement le matin...
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: ✅ Vérifications finales
+      description: Avant de soumettre votre rapport
+      options:
+        - label: J'ai vérifié qu'un ticket similaire n'existe pas déjà
+          required: true
+        - label: J'ai fourni suffisamment d'informations pour reproduire le problème
+          required: true 
