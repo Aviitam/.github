@@ -12,7 +12,7 @@ body:
   - type: dropdown
     id: os
     attributes:
-      label: 🖥️ Système d'exploitation
+      label: 🖥️ Système d'exploitation (obligatoire)
       description: Quel système d'exploitation utilisez-vous ?
       options:
         - Windows
@@ -50,7 +50,7 @@ body:
   - type: textarea
     id: description
     attributes:
-      label: Description du problème
+      label: Description du problème (obligatoire)
       description: Décrivez clairement et précisément le problème rencontré
       placeholder: Ex. L'application plante quand je clique sur le bouton "Sauvegarder"
     validations:
@@ -59,7 +59,7 @@ body:
   - type: textarea
     id: steps
     attributes:
-      label: 🔄 Étapes pour reproduire
+      label: 🔄 Étapes pour reproduire (obligatoire)
       description: Listez les étapes exactes pour reproduire le problème
       placeholder: |
         1. Aller à '...'
@@ -72,7 +72,7 @@ body:
   - type: textarea
     id: expected
     attributes:
-      label: ✅ Comportement attendu
+      label: ✅ Comportement attendu (obligatoire)
       description: Décrivez ce qui devrait se passer normalement
       placeholder: Ex. La page devrait se charger sans erreur
     validations:
@@ -81,13 +81,11 @@ body:
   - type: textarea
     id: actual
     attributes:
-      label: ❌ Comportement observé
+      label: ❌ Comportement observé (obligatoire)
       description: Décrivez ce qui se passe réellement
       placeholder: Ex. Une erreur 404 s'affiche
     validations:
       required: true
-
-
 
   - type: textarea
     id: error-messages
@@ -138,7 +136,5 @@ body:
       label: ✅ Vérifications finales
       description: Avant de soumettre votre rapport
       options:
-        - label: J'ai vérifié qu'un ticket similaire n'existe pas déjà
-          required: true
         - label: J'ai fourni suffisamment d'informations pour reproduire le problème
           required: true 
