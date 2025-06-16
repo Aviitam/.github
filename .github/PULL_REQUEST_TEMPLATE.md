@@ -2,14 +2,6 @@
 
 *Décrivez brièvement les changements apportés et leur objectif.*
 
-## 🎯 Contexte et motivation
-
-*Expliquez pourquoi ces changements sont nécessaires. Quel problème résolvez-vous ?*
-
-## 🔗 Tickets liés
-
-- Closes #
-- Relates to #
 
 ## 🔄 Type de changement
 
@@ -21,13 +13,7 @@
 - [ ] 📝 Documentation
 - [ ] 🔧 Configuration/Infrastructure
 - [ ] 🚨 Breaking change
-- [ ] 🧪 Autre : __________
-
-## 🔧 Changements techniques
-
-*Listez les principaux changements techniques (facultatif) :*
-- 
-- 
+- [ ] 🧪 Autre : 
 
 ## 🧪 Tests
 
@@ -38,10 +24,6 @@
 - [ ] Aucun test nécessaire
 
 
-## 📝 Notes de déploiement
-
-*Y a-t-il des étapes spéciales pour le déploiement ? (migrations, variables d'environnement, etc.)*
-
 ## ✅ Checklist
 
 - [ ] Le code compile sans erreurs
@@ -50,11 +32,13 @@
 - [ ] La documentation a été mise à jour si nécessaire
 - [ ] Le code respecte les conventions de style du projet
 - [ ] J'ai vérifié qu'il n'y a pas de conflits de merge
-- [ ] Les messages de commit sont clairs et descriptifs
 
-## 👥 Reviewers
 
-*Mentionnez les personnes spécifiques si nécessaire : @username*
+## 🔗 Issues liés (automatise la gestion des issues)
 
----
-*Merci pour votre contribution ! 🙏*
+**Exemple :**
+- **`Closes #123`** : Ferme automatiquement l'issue quand la PR est mergée  
+- **`Relates to #456`** : Lie la PR à l'issue sans la fermer
+
+- Closes #
+- Relates to #
