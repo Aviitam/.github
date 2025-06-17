@@ -1,34 +1,31 @@
-name: 🐛 Rapport de bug
-description: Signalez un problème pour nous aider à améliorer le projet
-title: "[BUG] "
-labels: ["bug", "needs-triage"]
+name: "\U0001F41E Rapport de bug"
+description: Signalez un problème pour permettre d'améliorer le projet
+title: '[BUG] '
+labels:
+  - bug
+  - needs-triage
 body:
   - type: markdown
     attributes:
-      value: |
-        ## Merci de signaler ce problème ! 👋
-        
-        Remplissez ce formulaire avec le maximum de détails pour nous aider à reproduire et résoudre le bug rapidement.
-        
-        💡 **Astuce** : Vous pouvez coller des images directement dans les zones de texte !
-
+      value: "## Merci de signaler ce problème ! \U0001F44B\n\nRemplissez ce formulaire avec le **maximum de détails** pour nous aider à reproduire et résoudre le bug rapidement.\n\n\U0001F4A1 **Astuce** : Vous pouvez coller des images directement dans les zones de texte !\\n\\n\n"
   - type: textarea
     id: description
     attributes:
-      label: 📝 Description du problème
-      description: Décrivez clairement et précisément le problème rencontré
+      label: "\U0001F4DD Description du problème"
+      description: >-
+        Décrivez clairement et précisément le problème rencontré (page,
+        fonctionnalité, etc.)
       placeholder: Ex. L'application plante quand je clique sur le bouton "Sauvegarder"
     validations:
       required: true
-
   - type: markdown
     attributes:
-      value: ""
+      value: |+
 
   - type: textarea
     id: steps
     attributes:
-      label: 🔄 Étapes pour reproduire
+      label: "\U0001F504 Étapes pour reproduire"
       description: Listez les étapes exactes pour reproduire le problème
       placeholder: |
         1. Aller à la page '...'
@@ -37,10 +34,9 @@ body:
         4. Observer l'erreur
     validations:
       required: true
-
   - type: markdown
     attributes:
-      value: ""
+      value: |+
 
   - type: textarea
     id: expected
@@ -50,30 +46,14 @@ body:
       placeholder: Ex. La page devrait se charger sans erreur et afficher...
     validations:
       required: true
+  - type: markdown
+    attributes:
+      value: |+
+
 
   - type: markdown
     attributes:
-      value: ""
-
-  - type: textarea
-    id: actual
-    attributes:
-      label: ❌ Résultat observé
-      description: Que se passe-t-il réellement ?
-      placeholder: Ex. Une erreur 404 s'affiche, ou la page reste blanche...
-    validations:
-      required: true
-
-  - type: markdown
-    attributes:
-      value: |
-        ---
-        ## 🔧 Informations techniques
-        
-        *Ces informations nous aident à reproduire le problème dans le bon environnement*
-        
-        &nbsp;
-
+      value: "---\n## \U0001F527 Informations techniques\n\n*Ces informations nous aident à reproduire le problème dans le bon environnement*\\n\n"
   - type: dropdown
     id: os
     attributes:
@@ -89,10 +69,9 @@ body:
         - Autre
     validations:
       required: true
-
   - type: markdown
     attributes:
-      value: ""
+      value: |+
 
   - type: dropdown
     id: browser
@@ -108,26 +87,19 @@ body:
         - Brave
         - Application mobile
         - Autre
-
   - type: markdown
     attributes:
-      value: ""
+      value: |+
 
   - type: input
     id: browser-version
     attributes:
       label: Version du navigateur
-      description: Menu → À propos de [Navigateur] pour connaître la version
+      description: 'Menu → À propos de [Navigateur] pour connaître la version'
       placeholder: Ex. Chrome 120.0.6099.109
-
   - type: markdown
     attributes:
-      value: |
-        ---
-        ## 🚨 Messages d'erreur et captures d'écran
-        
-        &nbsp;
-
+      value: "---\n## \U0001F6A8 Messages d'erreur et captures d'écran\n"
   - type: textarea
     id: error-messages
     attributes:
@@ -135,85 +107,31 @@ body:
       description: Copiez-collez les messages d'erreur exacts (si visibles)
       placeholder: Pas de message d'erreur visible
       render: text
-
   - type: markdown
     attributes:
-      value: ""
+      value: |+
 
   - type: textarea
     id: console-logs
     attributes:
       label: Console du navigateur
-      description: Ouvrez la console (F12 → Console) et copiez les erreurs en rouge
+      description: Ouvrez la console (F12 → Console) et copiez/collez les erreurs en rouge
       placeholder: Pas d'erreur dans la console
       render: text
-
   - type: markdown
     attributes:
-      value: ""
+      value: |+
 
   - type: textarea
     id: screenshots
     attributes:
-      label: 📸 Captures d'écran
+      label: "\U0001F4F8 Captures d'écran"
       description: Glissez-déposez vos images ou collez-les directement (Ctrl+V)
       placeholder: Ajoutez des captures d'écran si nécessaire
-
-  - type: markdown
-    attributes:
-      value: |
-        ---
-        ## 🔍 Informations supplémentaires
-        
-        &nbsp;
-
-  - type: checkboxes
-    id: solutions-tried
-    attributes:
-      label: Solutions déjà tentées
-      description: Avez-vous essayé ces solutions courantes ?
-      options:
-        - label: Actualiser la page
-        - label: Vider le cache du navigateur
-        - label: Essayer un autre navigateur
-        - label: Redémarrer l'application
-        - label: Désactiver les extensions
-        - label: Navigation privée
-
-  - type: markdown
-    attributes:
-      value: ""
-
-  - type: dropdown
-    id: frequency
-    attributes:
-      label: Fréquence du problème
-      description: À quelle fréquence cela arrive-t-il ?
-      options:
-        - Première fois
-        - Parfois
-        - Souvent  
-        - Toujours
-
-  - type: markdown
-    attributes:
-      value: ""
-
-  - type: textarea
-    id: additional-context
-    attributes:
-      label: Contexte supplémentaire
-      description: Autres informations utiles (impact, urgence, etc.)
-      placeholder: Ex. Cela bloque complètement mon travail / Cela arrive seulement le matin...
-
-  - type: markdown
-    attributes:
-      value: ""
-
   - type: checkboxes
     id: terms
     attributes:
       label: ✅ Vérifications finales
       options:
         - label: J'ai fourni suffisamment d'informations pour reproduire le problème
-          required: true 
+          required: true
