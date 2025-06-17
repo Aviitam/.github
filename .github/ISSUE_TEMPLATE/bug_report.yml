@@ -10,7 +10,7 @@ body:
         
         Remplissez ce formulaire avec le **maximum de détails** pour nous aider à reproduire et résoudre le bug rapidement.
     
-        💡 **Astuce** : Vous pouvez coller des images directement dans les zones de texte !\n\n
+        💡 **Astuce** : Vous pouvez coller des images directement dans les zones de texte !
   
   - type: textarea
     id: description
@@ -21,18 +21,18 @@ body:
     validations:
       required: true
 
-    - type: markdown
-      attributes:
-        value: ""
-  
-    - type: textarea
-      id: expected
-      attributes:
-        label: Que devrait-il se passer normalement ?
-        description: Décrivez clairement et précisément ce que vous attendiez.
-        placeholder: Ex. La page devrait se charger sans erreur et afficher...
-      validations:
-        required: true
+  - type: markdown
+    attributes:
+      value: ""
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Que devrait-il se passer normalement ?
+      description: Décrivez clairement et précisément ce que vous attendiez.
+      placeholder: Ex. La page devrait se charger sans erreur et afficher...
+    validations:
+      required: true
 
   - type: textarea
     id: steps
@@ -53,7 +53,7 @@ body:
         ---
         ## 🔧 Informations techniques
         
-        *Ces informations nous aident à reproduire le problème dans le bon environnement*\n
+        *Ces informations nous aident à reproduire le problème dans le bon environnement*
         
   - type: dropdown
     id: os
