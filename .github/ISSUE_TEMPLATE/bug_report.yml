@@ -23,7 +23,7 @@ body:
 
   - type: markdown
     attributes:
-      value: " \n"
+      value: "<br>"
 
   - type: textarea
     id: expected
@@ -73,7 +73,7 @@ body:
 
   - type: markdown
     attributes:
-      value: " \n"
+      value: "<br>"
 
   - type: dropdown
     id: browser
@@ -92,7 +92,7 @@ body:
 
   - type: markdown
     attributes:
-      value: " \n"
+        value: "<br>"
 
   - type: input
     id: browser-version
@@ -116,7 +116,7 @@ body:
     
   - type: markdown
     attributes:
-      value: " \n"
+      value: "<br>"
 
   - type: textarea
     id: error-logs
@@ -135,7 +135,7 @@ body:
 
   - type: markdown
     attributes:
-      value: " \n"
+      value: "<br>"
 
   - type: checkboxes
     id: terms
