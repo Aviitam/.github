@@ -7,10 +7,9 @@ body:
     attributes:
       value: |
         ## Merci de signaler ce problème ! 👋
-        
         Remplissez ce formulaire avec le **maximum de détails** pour nous aider à reproduire et résoudre le bug rapidement.
-    
         💡 **Astuce** : Vous pouvez coller des images directement dans les zones de texte !
+        <br>
   
   - type: textarea
     id: description
@@ -20,10 +19,6 @@ body:
       placeholder: Ex. L'application plante quand je clique sur le bouton "Sauvegarder"
     validations:
       required: true
-
-  - type: markdown
-    attributes:
-      value: "<br>"
 
   - type: textarea
     id: expected
@@ -50,6 +45,7 @@ body:
   - type: markdown
     attributes:
       value: |
+        <br>
         ---
         ## 🔧 Informations techniques
         
@@ -71,10 +67,6 @@ body:
     validations:
       required: true
 
-  - type: markdown
-    attributes:
-      value: "<br>"
-
   - type: dropdown
     id: browser
     attributes:
@@ -90,10 +82,6 @@ body:
         - Application mobile
         - Autre
 
-  - type: markdown
-    attributes:
-        value: "<br>"
-
   - type: input
     id: browser-version
     attributes:
@@ -102,8 +90,9 @@ body:
       placeholder: Ex. Chrome 120.0.6099.109
 
   - type: markdown
-    attributes:
+    attributes: 
       value: |
+        <br>
         ---
         ## 🚨 Messages d'erreur et captures d'écran
 
@@ -113,24 +102,17 @@ body:
       label: 📸 Captures d'écran
       description: Glissez-déposez vos images ou collez-les directement (Ctrl+V)
       placeholder: Ajoutez des captures d'écran si nécessaire
-    
-  - type: markdown
-    attributes:
-      value: "<br>"
 
   - type: textarea
     id: error-logs
     attributes:
       label: Messages d'erreur et logs
       description: |
-        • Copiez-collez les messages d'erreur exacts (si visibles)
-        • Ouvrez la console (F12 → Console) et copiez/collez les erreurs en rouge
+        Copiez-collez les messages d'erreur exacts (si visibles) /
+        Ouvrez la console (F12 → Console) et copiez/collez les erreurs en rouge
       placeholder: |
-        Messages d'erreur visibles :
-        [collez ici]
-
-        Erreurs de la console :
-        [collez ici]
+        - Messages d'erreur visibles
+        - Erreurs de la console
       render: text
 
   - type: markdown
@@ -140,7 +122,7 @@ body:
   - type: checkboxes
     id: terms
     attributes:
-      label: ✅ Vérifications finales
+      label: Vérification finale
       options:
-        - label: J'ai fourni suffisamment d'informations pour reproduire le problème
+        - label: J'ai fourni suffisamment d'informations pour reproduire le bug
           required: true 
