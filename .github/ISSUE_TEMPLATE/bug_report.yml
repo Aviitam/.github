@@ -44,8 +44,11 @@ body:
 
   - type: markdown
     attributes:
+      value: "<br>"
+
+  - type: markdown
+    attributes:
       value: |
-        <br>
         ---
         ## 🔧 Informations techniques
         
@@ -90,9 +93,12 @@ body:
       placeholder: Ex. Chrome 120.0.6099.109
 
   - type: markdown
+    attributes:
+      value: "<br>"
+
+  - type: markdown
     attributes: 
       value: |
-        <br>
         ---
         ## 🚨 Messages d'erreur et captures d'écran
 
